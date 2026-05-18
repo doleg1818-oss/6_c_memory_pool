@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/2.work/4_education/1_C/6_c_memory_pool/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -ID:/2.work/4_education/1_C/6_c_memory_pool/include -g -std=gnu99 -o CMakeFiles\\memory_pool_example.dir\\examples\\main.c.obj -c D:\\2.work\\4_education\\1_C\\6_c_memory_pool\\examples\\main.c",
+  "file": "D:/2.work/4_education/1_C/6_c_memory_pool/examples/main.c",
+  "output": "D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/memory_pool_example.dir/examples/main.c.obj"
+},
+{
+  "directory": "D:/2.work/4_education/1_C/6_c_memory_pool/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -ID:/2.work/4_education/1_C/6_c_memory_pool/include -g -std=gnu99 -o CMakeFiles\\memory_pool_example.dir\\src\\memory_pool.c.obj -c D:\\2.work\\4_education\\1_C\\6_c_memory_pool\\src\\memory_pool.c",
+  "file": "D:/2.work/4_education/1_C/6_c_memory_pool/src/memory_pool.c",
+  "output": "D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/memory_pool_example.dir/src/memory_pool.c.obj"
+},
+{
+  "directory": "D:/2.work/4_education/1_C/6_c_memory_pool/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -ID:/2.work/4_education/1_C/6_c_memory_pool/include -g -std=gnu99 -o CMakeFiles\\test_memory_pool.dir\\tests\\test_memory_pool.c.obj -c D:\\2.work\\4_education\\1_C\\6_c_memory_pool\\tests\\test_memory_pool.c",
+  "file": "D:/2.work/4_education/1_C/6_c_memory_pool/tests/test_memory_pool.c",
+  "output": "D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/test_memory_pool.dir/tests/test_memory_pool.c.obj"
+},
+{
+  "directory": "D:/2.work/4_education/1_C/6_c_memory_pool/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -ID:/2.work/4_education/1_C/6_c_memory_pool/include -g -std=gnu99 -o CMakeFiles\\test_memory_pool.dir\\src\\memory_pool.c.obj -c D:\\2.work\\4_education\\1_C\\6_c_memory_pool\\src\\memory_pool.c",
+  "file": "D:/2.work/4_education/1_C/6_c_memory_pool/src/memory_pool.c",
+  "output": "D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/test_memory_pool.dir/src/memory_pool.c.obj"
+}
+]

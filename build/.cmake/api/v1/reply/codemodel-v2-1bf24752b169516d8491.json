@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "c_memory_pool",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "memory_pool_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-memory_pool_example-Debug-28b29b7c1a67aca96e13.json",
+					"name" : "memory_pool_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_memory_pool::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_memory_pool-Debug-8cb98e99d88ef6672922.json",
+					"name" : "test_memory_pool",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/2.work/4_education/1_C/6_c_memory_pool/build",
+		"source" : "D:/2.work/4_education/1_C/6_c_memory_pool"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

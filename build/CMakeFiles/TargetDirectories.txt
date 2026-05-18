@@ -1,0 +1,4 @@
+D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/memory_pool_example.dir
+D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/test_memory_pool.dir
+D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/edit_cache.dir
+D:/2.work/4_education/1_C/6_c_memory_pool/build/CMakeFiles/rebuild_cache.dir
