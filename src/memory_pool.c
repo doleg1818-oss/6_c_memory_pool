@@ -25,7 +25,12 @@ void *memory_pool_alloc(memory_pool_t *pool)
         if(pool->used[i] == false)                  // Found free block
         {
             pool->used[i] = true;                  // mark as used
-            pool->used_count++;                     
+            pool->used_count++;     
+            
+            if(pool->used_count > pool->peak_used_count)
+            {
+                pool->peak_used_count = pool->used_count;
+            }
 
             return pool->memory[i];                 // return pointer on this free block
         }
@@ -37,28 +42,25 @@ bool memory_pool_free(memory_pool_t *pool, void *ptr)
 {
     if(pool == NULL || ptr == NULL)
     {
-        printf("pool == NULL || ptr == NULL\n");                            //debug
         return false;
     }
-
+    
     for(size_t i = 0; i < MEMORY_POOL_BLOCK_COUNT; i++)
     {
         if(ptr == pool->memory[i])  // ??
         {
+            memset(pool->memory[i], 0, MEMORY_POOL_BLOCK_SIZE);
+
             if(pool->used[i] == false)  // if block is free
             {
-                printf("FOUND FREE BLOCK\n");                                //debug
                 return false;
             }
-
-            printf("make this block free\n");                               //debug
             pool->used[i] = false;      // make this block free
             pool->used_count--;
 
             return true;
         }
     }
-    printf("NO FOUND \n");                                                  //debug
     return false;
 }
 
@@ -79,3 +81,13 @@ size_t memory_pool_free_count(const memory_pool_t *pool)
     }
     return MEMORY_POOL_BLOCK_COUNT - pool->used_count;
 }
+
+size_t memory_pool_peak_used_count(const memory_pool_t *pool)
+{
+    if(pool == NULL)
+    {
+        return 0;
+    }
+    return pool->peak_used_count;
+}
+

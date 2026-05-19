@@ -29,6 +29,23 @@ int main(void)
     assert(memory_pool_free(&pool, block2) == true);
     assert(memory_pool_used_count(&pool) == 0); 
 
+
+    // Define all blocks
+    void *blocks[MEMORY_POOL_BLOCK_COUNT];
+    for(size_t i = 0; i < MEMORY_POOL_BLOCK_COUNT; i++)
+    {
+        blocks[i] = memory_pool_alloc(&pool);
+        assert(blocks[i] != NULL);
+    }
+    assert(memory_pool_alloc(&pool) == NULL);
+
+    // check invalid pointer
+    uint8_t fake_buffer[32] = {0,};
+    assert(memory_pool_free(&pool, fake_buffer) == false); 
+
+
+
+
     printf("memory pool test passed \n");
 
     return 1;
