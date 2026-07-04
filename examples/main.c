@@ -11,7 +11,7 @@ int main(void)
     void *block = memory_pool_alloc(&pool);
     if(block != NULL)
     {
-        printf("Block allocation \n");
+        printf("Block allocation succsesfuly \n");
     }
 
     printf("Used block %zu\n", memory_pool_used_count(&pool));
